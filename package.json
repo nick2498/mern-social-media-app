@@ -23,7 +23,7 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm start\" \"npm run client\" "
+    "dev": "env-cmd node --watch index.js"
   },
   "engines": {
     "node": ">=14 <15"
